@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import "../style.css";
+---
+<Layout title="Angela Veljanovska">
+	<Header/>
+	<section id="hero-section">
+		<div class="container">
+			<h1>Hi! My name is Angela.</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, sapiente.</p>
+			<button class="btn">
+				<a href="#">SCROLL FOR MORE</a>
+			</button>
+
+		</div>
+	</section>
+</Layout>
+
+
+<style>
+
+#hero-section{
+	background:rgba(0,0,0,0.5) url("../img/test-bg.jpg");
+	background-blend-mode: overlay;
+}
+</style>
