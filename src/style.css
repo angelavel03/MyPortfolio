@@ -1,11 +1,183 @@
+/* GLOBAL */
 *{
     padding: 0;
     margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
 }
 .container{
     width: 90%;
     margin: auto;
 }
+.container-fluid{
+    width: 100%;
+}
 section{
     padding: 150px 0;
+}
+button {
+    cursor: pointer;
+}
+.text-end {
+    text-align: right;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.col-50{
+    width: 50%;
+}
+.col-30{
+    width: 30%;
+}
+.col-70{
+    width: 70%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.col-60{
+    width: 60%;
+}
+.col-40{
+    width: 40%;
+}
+.w-70{
+    width: 70%;
+}
+.btn{
+	background: none;
+	padding: 15px 30px;
+	border: none;
+	border-bottom: solid 2px blueviolet;
+	margin-top:20px ;
+
+}
+.btn a{
+	text-decoration: none;
+	color: rgb(240, 248, 255);
+}
+.section-title{
+	color: aliceblue;
+	font-size: 52px;
+	line-height: 150%;
+}
+.section-text{
+	color: aliceblue;
+	font-size: 20px;
+	line-height: 150%;
+}
+/* HERO */
+#hero-section {
+	background-color: #181822;
+}
+.hero-title{
+	color: aliceblue;
+	font-size: 52px;
+	line-height: 150%;
+}
+.hero-text{
+	color: aliceblue;
+	font-size: 18px;
+	line-height: 150%;
+	margin-top: 20px;
+}
+.first-img {
+    width: 360px;
+    height: 500px ;
+}
+/* SERVICES */
+#services .col{
+	padding:15px ;
+	height: 200px;
+	width: 200px;
+}
+#services{
+	color: aliceblue;
+}
+/* ABOUT */
+#about{
+	padding: 0;
+}
+.about-img{
+    background: url("../img/second.jpg") 100% 50% no-repeat;
+    height: 600px;
+    width: 40%;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+.bg-pink{
+	background-color: rgb(224, 197, 226);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.about-content{
+	padding: 100px;
+
+}
+/* WORK */
+.work-small {
+	padding: 30px;
+}
+.work-small h2{
+	/* margin-left: 20px; */
+	line-height: 120%;
+}
+.work-small:last-of-type {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+.work-btn {
+	border: solid 2px blueviolet;
+	background-color: transparent;
+	padding: 25px 50px;
+	color: aliceblue;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: bold;
+	transition: .3s ease;
+}
+.work-btn:hover {
+	background-color: blueviolet;
+}
+/* CONTACT */
+#contact {
+	color: #fff;
+	padding-top: 0;
+}
+.input-form {
+    width: 90%;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+    background-color: #181822;
+    padding: 10px;
+    font-size: 18px;
+}
+
+label {
+    font-size: 22px;
+}
+
+textarea {
+    height: unset !important;
+}
+
+.submit-btn {
+    border: none;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 18px;
+    padding: 20px 40px;
+    width: 93%;
+    margin-top: 15px;
 }
