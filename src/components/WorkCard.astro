@@ -2,32 +2,46 @@
 export interface Props {
 	title: string,
     text: string,
-    img: string;
+    img: string,
+    url: string;
 }
 
-const { title,text,img } = Astro.props;
+const { title,text,img, url } = Astro.props;
 ---
 
 
 <div class="card">
-    <img src={img} alt="">
-    <div class="card-body">
-        <h3 class="work-title">{title}</h3>
-        <p class="work-text">{text}</p>
-    </div>
+    <a href={url} target="_blank">
+        <img src={img} alt="">
+        <div class="card-body">
+            <h3 class="work-title">{title}</h3>
+            <p class="work-text">{text}</p>
+        </div>
+    </a>
 </div>
 
 <style>
 
 img{
     width: 100%;
-    height: 400px;
+    height: 350px;
 }
 .card{
     color: aliceblue;
     border-radius: 5px;
     background-color: #181822;
     margin: 35px 15px;
+    cursor: pointer;
+    transition: .3s ease;
+    position: relative;
+    z-index: 1111;
+}
+.card a {
+    color: aliceblue;
+    text-decoration: none;
+}
+.card:hover {
+    transform: scale(1.05);
 }
 .card-body {
     padding: 40px;
@@ -41,5 +55,10 @@ img{
     margin-top: 10px;
     line-height: 150%;
     color: rgba(240, 248, 255, 0.8);
+}
+@media screen and (max-width: 412px){
+    img {
+        height: 250px;
+    }
 }
 </style>

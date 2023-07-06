@@ -6,23 +6,31 @@ import "../style.css";
     <div class="container">
         <nav>
             <div class="logo">
-                <a href="#">Angela Veljanovska</a>
-            </div>
+                <img src="../img/logo.png" alt="">
+                <a href="#">Angela Veljanovska</a> 
+            </div>	
             <div class="menu">
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#about" class="nav-link">About me</a>
-                <a href="#work" class="nav-link">My Projects</a>
-                <a href="#contact" class="nav-link">Contact me</a>
+                <a href="#services" class="nav-link">Services</a> 
+                <a href="#about" class="nav-link">About me</a> 
+                <a href="#work" class="nav-link">My Projects</a> 
+                <a href="#contact" class="nav-link">Contact me</a> 
+            </div>
+            <div class="menu-btn">
+                <i class="fa-solid fa-ice-cream"></i>
             </div>
         </nav>
     </div>
 </header>
 
 <style>
-    
 header{
-    padding: 30px 0;
-    background-color: #181822;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    background-color: rgba(24, 24, 34, 0.9);
+    z-index: 2222;
 }
 nav{
     display: flex;
@@ -34,9 +42,52 @@ nav{
     padding: 15px;
     color: aliceblue;
 }
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .logo a{
     text-decoration: none;
     color: aliceblue;
 }
 
+.logo img {
+    width: 75px;
+}
+.menu-btn i {
+    font-size: 24px;
+    color: aliceblue;
+}
+
+.menu-btn {
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    .menu-btn {
+        display: block;
+    }
+	.menu {
+        position: fixed;
+        top: 12%;
+        right: 0;
+        display: block;
+        width: 100%;
+        background-color: rgba(24, 24, 34, 0.9);
+        display: none;
+    }
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+    .menu.show {
+        display: block;
+    }
+}
 </style>
+
+<script type="text/javascript">
+    document.querySelector(".menu-btn").addEventListener("click", () => {
+        document.querySelector(".menu").classList.toggle("show");
+    })
+</script>

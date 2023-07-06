@@ -1,17 +1,30 @@
 <footer>
     <div class="container">
-        <div class="row">
-            <div class="col-50">
+        <div class="row align-center justify-between">
+            <div class="col-33">
                 <p class="footer-title">Angela.V</p>
                 <div class="social-links">
-                    <a href="#" class="social-link">Facebook</a>
-                    <a href="#" class="social-link">Instagram</a>
-                    <a href="#" class="social-link">Github</a>
+                    <a href="#" class="social-link" id="fb">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-link" id="ig">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" id="git">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                 </div>
             </div>
-            <div class="col-50 text-end">
-                <p>All Rights Reserved &copy; Coypright 2023</p>
-                <p class="authot">Created by Angela Veljanovska</p>
+            <div class="col-33" style="text-align: center;">
+                <div class="footer-info">
+                    <p>All Rights Reserved &copy; Coypright 2023</p>
+                    <p class="authot">Created by Angela Veljanovska</p>
+                </div>
+            </div>
+            <div class="col-33">
+                <div class="footer-logo">
+                    <img src="../img/logo.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -23,5 +36,50 @@
         padding: 50px;
         background-color: #181822;
     }
+    .footer-title {
+        font-size: 48px;
+        font-family: Papyrus, fantasy;
+    }
+    .social-links {
+        margin-top: 10px;
+    }
+    .social-link {
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 6.5px;
+        text-align: center;
+        margin-right: 5px;
+    }
+    .social-link i {
+        font-size: 20px;
+        color: #ffffff;
+        /* margin-left: 2px; */
+        /* margin-right: -2px; */
+    }
+    .social-link:nth-child(3) i {
+        margin-right: 0;
+    }
+    #fb {
+        background-color: rgb(0, 110, 255);
+    }
+    #ig {
+        background-color: blueviolet;
+    }
+    #git {
+        background-color: black;
+    }
 
+    .footer-logo img {
+        width: 150px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .align-center {
+            text-align: center;
+        }
+        .footer-info {
+            margin: 30px 0;
+        }
+    }
 </style>
