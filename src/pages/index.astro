@@ -7,7 +7,7 @@ import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Angela Veljanovska">
-	<Header/>
+	<Header language="en"/>
 	<section id="hero-section">
 		<div class="container">
 			<div class="row align-center">
@@ -28,6 +28,7 @@ import Footer from '../components/Footer.astro';
 		<div class="container">
 			<div class="row">
 				<div class="col-30">
+					<p class="upper-text">Services</p>
 					<h2 class="section-title">Skillset</h2>
 				</div>
 				<div class="col-70">
@@ -62,13 +63,14 @@ import Footer from '../components/Footer.astro';
 			<div class="row">
 				<div class="col-60 bg-pink">
 					<div class="about-content">
+						<p class="upper-text"  style="color: black">About me</p>
 						<h2 class="section-title">Introduction</h2>
 						<p class="section-text"> 
 							Greetings! I'm delighted to introduce myself as a passionate and dedicated web developer based in Ohrid, Macedonia. I study at the esteemed "Faculty of Computer Science and Engineering - FINKI."
 							Despite being young in the industry, my enthusiasm and commitment to my craft drive me to deliver impressive results. I have a keen eye for detail, striving to create visually stunning and functional websites that provide an exceptional user experience. I find immense joy in transforming ideas into reality through elegant code and innovative design.
 						</p>
 						<button class="btn black">
-							<a href="#">Follow me on IG</a>
+							<a href="https://www.instagram.com/aveljanovskaa/" target="_blank">Follow me on IG</a>
 						</button>
 					</div>
 				</div>
@@ -81,6 +83,7 @@ import Footer from '../components/Footer.astro';
 			<div class="row">
 				<div class="col-50">
 					<div class="work-small">
+						<p class="upper-text">My projects</p>
 						<h2 class="section-title w-70">Work that I've done for the past 2 years</h2>
 					</div>
 					<WorkCard
@@ -122,6 +125,7 @@ import Footer from '../components/Footer.astro';
 		<div class="container">
 			<div class="row">
 				<div class="col-50">
+					<p class="upper-text">Contact</p>
 					<h2 class="section-title">Let's talk business</h2>
 					<p class="secton-text" style="width: 90%;">Now that you know a lot about me, let me know if you are interested to work with me. Wether you have a question or you want to share an idea with me, feel free to contact me.</p>
 				</div>
@@ -136,7 +140,7 @@ import Footer from '../components/Footer.astro';
 						<label for="message">Message:</label><br>
 						<textarea id="message" class="input-form" cols="30" rows="5" placeholder="Enter your message..."></textarea>
 						<div class="errormsg" id="messageError"></div>
-						 <button class="submit-btn" id="mail-btn">Let's get started</button>
+						 <button type="button" class="submit-btn" id="mail-btn">Let's get started</button>
 					</form>
 				</div>
 			</div>
@@ -153,66 +157,66 @@ import Footer from '../components/Footer.astro';
 
 <script lang="js">
 	function sendMail() {
-		let params = {
-			name: document.getElementById("name").value,
-			email: document.getElementById("email").value,
-			message: document.getElementById("message").value,
-		}
-
-		const serviceId = 'service_kelewsr';
-		const templateId = 'template_mphrjgs';
-
-		emailjs.send(serviceId, templateId, params).then((response) => {
-            console.log(response);
-		}).catch((error) => {
-            console.log(error);
-        })
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("message").value = "";
-	}
-
-    function validateForm() {
-        document.getElementById("nameError").textContent = "";
-        document.getElementById("emailError").textContent = "";
-        document.getElementById("messageError").textContent = "";
-
-        let name = document.getElementById("name").value;
-        let email = document.getElementById("email").value;
-        let message = document.getElementById("message").value;
-
-        if (name === "") {
-            document.getElementById("nameError").textContent = "*Name is required!";
-            return false;
-        } else if(name.length < 3) {
-            document.getElementById("nameError").textContent = "*Name should be at least 3 characters!";
-            return false;
-        }
-
-        if(email === "") {
-            document.getElementById("emailError").textContent = "*Email is required!";
-            return false;
-        } else if (!isValidEmail(email)) {
-            document.getElementById("emailError").textContent = "*Invalid email!";
-            return false;
-        }
-
-        if(message === "") {
-            document.getElementById("messageError").textContent = "*Message is required!";
-            return false;
-        }
-
-        return true;
+    let params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
     }
 
-    function isValidEmail(email) {
-        let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
+    const serviceId = 'service_kelewsr';
+    const templateId = 'template_mphrjgs';
 
-    document.getElementById('mail-btn').addEventListener("click", () => {
-        if(validateForm() === true) {
-            sendMail();
-        }
+    emailjs.send(serviceId, templateId, params).then((response) => {
+        console.log(response);
+    }).catch((error) => {
+        console.log(error);
     })
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+}
+
+function validateForm() {
+    document.getElementById("nameError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+    document.getElementById("messageError").textContent = "";
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    if (name === "") {
+        document.getElementById("nameError").textContent = "*Name is required!";
+        return false;
+    } else if(name.length < 3) {
+        document.getElementById("nameError").textContent = "*Name should be at least 3 characters!";
+        return false;
+    }
+
+    if(email === "") {
+        document.getElementById("emailError").textContent = "*Email is required!";
+        return false;
+    } else if (!isValidEmail(email)) {
+        document.getElementById("emailError").textContent = "*Invalid email!";
+        return false;
+    }
+
+    if(message === "") {
+        document.getElementById("messageError").textContent = "*Message is required!";
+        return false;
+    }
+
+    return true;
+}
+
+function isValidEmail(email) {
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+document.getElementById('mail-btn').addEventListener("click", () => {
+    if(validateForm() === true) {
+        sendMail();
+    }
+})
 </script>

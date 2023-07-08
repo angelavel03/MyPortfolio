@@ -7,17 +7,19 @@ import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Angela Veljanovska">
-	<Header isMk/>
+	<Header language="mk"/>
 	<section id="hero-section">
 		<div class="container">
 			<div class="row align-center">
 				<div class="col-50"></div>
 				<div class="col-50">
 					<div class="hero-content">
-						<h1 class="hero-title">I'm Angela Veljanovska. A Web Developer based in Ohrid.</h1>
-						<p class="hero-text">If you are sick of slow websites that has hundred times seen template you are on the right place, I create lightspeed performance websites with ease to use and modern user interface.</p>
+						<h1 class="hero-title">Јас сум Ангела Вељановска, веб девелопер од Охрид.</h1>
+						<p class="hero-text">
+							Ако сте изморени од бавни веб-страници кои користат многу пати видени темплејти вие сте на вистинското место, јас изработувам брзи веб-страни со модерен кориснички интерфејс и моќни перформанси.
+						</p>
 						<button class="btn scroll">
-							<a href="#services">Scroll for more</a>
+							<a href="#services">Листај за повеќе</a>
 						</button>
 					</div>
 				</div>
@@ -28,29 +30,30 @@ import Footer from '../components/Footer.astro';
 		<div class="container">
 			<div class="row">
 				<div class="col-30">
-					<h2 class="section-title">Skillset</h2>
+					<p class="upper-text">Услуги</p>
+					<h2 class="section-title">Вештини</h2>
 				</div>
 				<div class="col-70">
 					<div class="grid">
 						<div class="col">
 							<img src="../img/responsive.png" alt="">
-							<h3 class="service-title">Respnsive Web Desgin</h3>
-							<p class="service-text">I excel in creating visually appealing and user-friendly websites that seamlessly adapt to various devices and screen sizes.</p>
+							<h3 class="service-title">Респонсивен Веб Дизајн</h3>
+							<p class="service-text">Јас се истакнувам во создавањето визуелно привлечни и кориснички веб-страни кои беспрекорно се прилагодуваат на различни уреди и големини на екранот.</p>
 						</div>
 						<div class="col">
 							<img src="../img/computer.png" alt="">
-							<h3 class="service-title">Modern User Interface</h3>
-							<p class="service-text">I specialize in crafting sleek and intuitive user interfaces that leave a lasting impression on your website visitors.</p>
+							<h3 class="service-title">Модерен Кориснички Интерфејс</h3>
+							<p class="service-text">Специјалист сум за изработка на елегантни и интуитивни кориснички интерфејси кои оставаат траен впечаток на посетителите на вашата веб-страница.</p>
 						</div>
 						<div class="col">
 							<img src="../img/fast.png" alt="">
-							<h3 class="service-title">Speed and Security</h3>
-							<p class="service-text">I prioritize the performance and security of your website by implementing efficient coding practices.</p>
+							<h3 class="service-title">Брзина и Сигурност</h3>
+							<p class="service-text">Давам приоритет на перформансите и безбедноста на вашата веб-страница со имплементирање на ефикасни практики за кодирање.</p>
 						</div>
 						<div class="col">
 							<img src="../img/mobile-development.png" alt="">
-							<h3 class="service-title">App Development</h3>
-							<p class="service-text">From conceptualization to deployment, I specialize in crafting customized and feature-rich applications</p>
+							<h3 class="service-title">Развој на Апликации</h3>
+							<p class="service-text">Од концептуализација до дистрибуирање, јас сум специјализиран за изработка на приспособени и богати апликации</p>
 						</div>
 					</div>
 				</div>
@@ -62,13 +65,14 @@ import Footer from '../components/Footer.astro';
 			<div class="row">
 				<div class="col-60 bg-pink">
 					<div class="about-content">
-						<h2 class="section-title">Introduction</h2>
+						<p class="upper-text" style="color: black">Запознавање</p>
+						<h2 class="section-title">За мене</h2>
 						<p class="section-text"> 
-							Greetings! I'm delighted to introduce myself as a passionate and dedicated web developer based in Ohrid, Macedonia. I study at the esteemed "Faculty of Computer Science and Engineering - FINKI."
-							Despite being young in the industry, my enthusiasm and commitment to my craft drive me to deliver impressive results. I have a keen eye for detail, striving to create visually stunning and functional websites that provide an exceptional user experience. I find immense joy in transforming ideas into reality through elegant code and innovative design.
+							Поздрав! Со задоволство се претставувам како страствен и посветен веб-девелопер со седиште во Охрид, Македонија. Студирам на „Факултет за информатички науки и компјутерско инженерство – ФИНКИ“.
+							И покрај тоа што сум млада во индустријата, мојот ентузијазам и посветеноста на мојата работа ме поттикнуваат да давам импресивни резултати. Имам остро око за детали, стремејќи се да создадам визуелно зачудувачки и функционални веб-страници кои обезбедуваат исклучително корисничко искуство. Наоѓам огромна радост во трансформирањето на идеите во реалност преку елегантен код и иновативен дизајн.
 						</p>
 						<button class="btn black">
-							<a href="#">Follow me on IG</a>
+							<a href="https://www.instagram.com/aveljanovskaa/" target="_blank">Заследи ме на Инстаграм</a>
 						</button>
 					</div>
 				</div>
@@ -81,17 +85,18 @@ import Footer from '../components/Footer.astro';
 			<div class="row">
 				<div class="col-50">
 					<div class="work-small">
-						<h2 class="section-title w-70">Work that I've done for the past 2 years</h2>
+						<p class="upper-text">Проекти</p>
+						<h2 class="section-title w-70">Мојата работа од претходниве две години</h2>
 					</div>
 					<WorkCard
 						title="Bonuasads - SMMA"
-						text="Bonuasads is a cutting-edge social media marketing agency (SMMA) project that showcases the power of digital advertising. With a team of talented marketing professionals, we specialize in helping businesses grow their online presence and reach their target audience effectively. Through strategic planning, innovative ad campaigns, and data-driven analytics, we create tailored solutions to maximize brand visibility, generate leads, and increase conversions. Bonuasads prides itself on delivering measurable results and driving tangible business growth for our clients."
+						text="Bonuasads е современ проект за маркетинг агенција за социјални медиуми (SMMA) кој ја покажува моќта на дигиталното рекламирање. Со тим од талентирани маркетинг професионалци, тие се специјализирани да им помагаат на бизнисите да го зголемат своето онлајн присуство и ефективно да стигнат до посакуваната публика. Преку стратешко планирање, иновативни рекламни кампањи и аналитика базирана на податоци, создаваат приспособени решенија за да ја максимизираат видливоста на брендот, да генерираат потенцијални клиенти и да ги зголемат конверзиите. Bonuasads се гордее со тоа што дава мерливи резултати и поттикнува опиплив бизнис раст за нивните клиенти."
 						img="../img/bonusads.png"
 						url="https://bonusads.agency"
 					/>
 					<WorkCard
 						title="Crypto Convertor"
-						text="Crypto Convertor is an innovative mobile application designed for crypto enthusiasts and investors. With this app, users can effortlessly convert various cryptocurrencies into their desired fiat currencies or other digital assets. Offering real-time exchange rates and supporting a wide range of cryptocurrencies. Stay ahead in the crypto market with Crypto Convertor."
+						text="Crypto Convertor е иновативна мобилна апликација наменета за крипто ентузијасти и инвеститори. Со оваа апликација, корисниците можат без напор да конвертираат различни криптовалути во посакуваните валути или други дигитални средства. Нуди девизни курсеви во реално време и поддржува широк спектар на криптовалути. Останете напред на пазарот на крипто со Crypto Convertor."
 						img="../img/convertor.png"
 						url="https://cryptoconverter.azurewebsites.net/"
 					/>
@@ -99,19 +104,19 @@ import Footer from '../components/Footer.astro';
 				<div class="col-50">
 					<WorkCard
 					title="Dentist Website"
-					text="Mydentist is a comprehensive dentist website designed to provide exceptional dental care services to patients of all ages. With a user-friendly interface and informative content, the website aims to create a comfortable online experience for visitors. From general dentistry and preventive care to cosmetic dentistry and specialized treatments, Mydentist offers a wide range of services to cater to individual oral health needs. Our highly skilled team of dentists and friendly staff are committed to delivering top-quality care, ensuring patients maintain optimal oral hygiene and achieve beautiful, healthy smiles."
+					text="Mydentist е сеопфатна стоматолошка веб-страница дизајнирана да обезбеди исклучителни услуги за стоматолошка нега на пациенти од сите возрасти. Со кориснички интерфејс и информативна содржина, веб-страницата има за цел да создаде удобно онлајн искуство за посетителите. Од општа стоматологија и превентивна нега до естетска стоматологија и специјализирани третмани, Mydentist нуди широк спектар на услуги за да се задоволат индивидуалните потреби на оралното здравје. Нивниот висококвалификуван тим од стоматолози и пријателски персонал се посветени на обезбедување грижа со врвен квалитет, обезбедувајќи пациентите да одржуваат оптимална орална хигиена и да постигнат убави, здрави насмевки."
 					img="../img/dentist.png"
 					url="https://mydentalist.webflow.io"
 					/>
 					<WorkCard
 						title="Finacial Website"
-						text="Neward is a dynamic financial website that offers valuable resources and expert insights to help individuals and businesses navigate the complex world of finance. Whether you're a seasoned investor or a novice looking to enhance your financial literacy, Neward provides a wealth of information on topics such as investment strategies, financial planning, market trends, and wealth management. Our goal is to empower users with the knowledge and tools they need to make informed financial decisions, build wealth, and achieve long-term financial success."
+						text="Neward е финансиска веб-страница која нуди вредни ресурси и стручни сознанија за да им помогне на поединците и бизнисите да се движат низ сложениот свет на финансиите. Без разлика дали сте искусен инвеститор или почетник кој сакате да ја подобрите вашата финансиска писменост, Neward обезбедува мноштво информации за теми како што се стратегии за инвестирање, финансиско планирање, трендови на пазарот и управување со богатството. Нивната цел е да ги поттикнат корисниците со знаење и алатки кои им се потребни за да донесат информирани финансиски одлуки, да градат богатство и да постигнат долгорочен финансиски успех."
 						img="../img/neward.png"
 						url="https://neward.webflow.io"
 					/>
 					<div class="work-small">
 						<button class="work-btn">
-							<a href="#contact">Let's chat</a>
+							<a href="#contact">Контактирај ме</a>
 						</button>
 					</div>
 				</div>
@@ -122,18 +127,22 @@ import Footer from '../components/Footer.astro';
 		<div class="container">
 			<div class="row">
 				<div class="col-50">
-					<h2 class="section-title">Let's talk business</h2>
-					<p class="secton-text" style="width: 90%;">Now that you know a lot about me, let me know if you are interested to work with me. Wether you have a question or you want to share an idea with me, feel free to contact me.</p>
+					<p class="upper-text">Контакт</p>
+					<h2 class="section-title">Ајде да соработуваме</h2>
+					<p class="secton-text" style="width: 90%;">Сега кога знаете повеќе за мене, информирајте ме дали сте заинтересирани да работите со мене. Без разлика дали имате прашање или сакате да споделите идеја со мене, слободно контактирајте ме.</p>
 				</div>
 				<div class="col-50">
 					<form>
-						<label for="name">Name:</label><br>
-						<input type="text" class="input-form" id="name" placeholder="Enter your name..."><br>
-						<label for="email">Email:</label><br>
-						<input type="email" class="input-form" id="email" placeholder="Enter your email..."><br>
-						<label for="message">Message:</label><br>
-						<textarea id="message" class="input-form" cols="30" rows="5" placeholder="Enter your message..."></textarea>
-						 <button class="submit-btn">Let's get started</button>
+						<label for="name">Име:</label><br>
+						<input type="text" class="input-form" id="name" placeholder="Напиши го своето име..."><br>
+						<div class="errormsg" id="nameError"></div><br>
+						<label for="email">Емаил:</label><br>
+						<input type="email" class="input-form" id="email" placeholder="Напиши го својот емаил..."><br>
+						<div class="errormsg" id="emailError"></div><br>
+						<label for="message">Порака:</label><br>
+						<textarea id="message" class="input-form" cols="30" rows="5" placeholder="Напиши ја својата порака..."></textarea>
+						<div class="errormsg" id="messageError"></div><br>
+						 <button type="button" class="submit-btn" id="mail-btn">Испрати порака</button>
 					</form>
 				</div>
 			</div>
@@ -141,3 +150,81 @@ import Footer from '../components/Footer.astro';
 	</section>
 	<Footer/>
 </Layout>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+	body {
+		font-family: 'Fira Sans', sans-serif;
+	}
+	#services .col{
+	padding:15px ;
+	height: 300px;
+	width: 300px;
+	}
+</style>
+
+<script lang="js">
+	function sendMail() {
+    let params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+    }
+
+    const serviceId = 'service_kelewsr';
+    const templateId = 'template_mphrjgs';
+
+    emailjs.send(serviceId, templateId, params).then((response) => {
+        console.log(response);
+    }).catch((error) => {
+        console.log(error);
+    })
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+}
+
+function validateForm() {
+    document.getElementById("nameError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+    document.getElementById("messageError").textContent = "";
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    if (name === "") {
+        document.getElementById("nameError").textContent = "*Името е задолжително!";
+        return false;
+    } else if(name.length < 3) {
+        document.getElementById("nameError").textContent = "*Името треба да има најмалку 3 букви!";
+        return false;
+    }
+
+    if(email === "") {
+        document.getElementById("emailError").textContent = "*Емаилот е задолжителен!";
+        return false;
+    } else if (!isValidEmail(email)) {
+        document.getElementById("emailError").textContent = "*Невалиден емаил!";
+        return false;
+    }
+
+    if(message === "") {
+        document.getElementById("messageError").textContent = "*Пораката е задолжителна!";
+        return false;
+    }
+
+    return true;
+}
+
+function isValidEmail(email) {
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+document.getElementById('mail-btn').addEventListener("click", () => {
+    if(validateForm() === true) {
+        sendMail();
+    }
+})
+</script>

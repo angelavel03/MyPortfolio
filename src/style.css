@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
 /* GLOBAL */
 *{
     padding: 0;
@@ -8,6 +9,7 @@ html {
 }
 body{
     background-color: #181822;
+	font-family: 'Sen', sans-serif;
 }
 h1, h2, h3, h4, h5, h6, p, span {
 	line-height: 150%;
@@ -87,6 +89,14 @@ button {
 	color: aliceblue;
 	font-size: 20px;
 	line-height: 150%;
+}
+.upper-text {
+	font-family: 12px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255,0.5);
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	margin-bottom: 10px;
 }
 .row.align-center {
 	align-items: center;
@@ -168,8 +178,17 @@ button {
 	color: black !important;
 }
 .about-content p {
-	color: black !important;
+	color: black;
 	text-align: justify;
+	margin-top: 10px;
+}
+.about-content p.upper-text {
+	font-family: 12px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255,0.5);
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	margin-bottom: 10px;
 }
 /* WORK */
 .work-small {
@@ -218,6 +237,7 @@ button {
     padding: 10px;
     font-size: 18px;
 	color: #ffffff;
+	font-family: 'Sen', sans-serif;
 }
 
 .input-form:focus {
@@ -240,6 +260,11 @@ textarea {
     padding: 20px 40px;
     width: 93%;
     margin-top: 15px;
+	transition: .3s ease;
+}
+
+.submit-btn:hover {
+	background-color: #770dda;
 }
 
 @media screen and (max-width: 768px) {
